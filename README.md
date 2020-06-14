@@ -3,7 +3,7 @@
 <a href="\build\app\outputs\apk\release" download="app-x86_64-release.apk">Download APK</a>
 
 
-## conversor_moeda
+## Conversor de moeda
 
 Um aplicativo simples que tem como função converter qualquer uma das três moedas (Euro, Dólar ou Real) em tempo real, utilizando a API HG Finance 
 
