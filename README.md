@@ -1,7 +1,6 @@
 # Download do aplicativo
 
-<a id="raw-url" href="https://raw.githubusercontent.com/Nashzen/Conversor-de-moeda/blob/master/downloadApp/app-armeabi-v7a-release.apk">Download APK</a>
-
+<a href="\downloadApp\" download="app-armeabi-v7a-release.apk">Download APK (Baixar o APK direto da pasta)</a>
 
 ## Conversor de moeda
 
