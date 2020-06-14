@@ -1,6 +1,6 @@
 # Download do aplicativo
 
-<a href="\build\app\outputs\apk\release" download="app-x86_64-release.apk">Download APK</a>
+<a href="\downloadApp" download="app-armeabi-v7a-release.apk">Download APK</a>
 
 
 ## Conversor de moeda
