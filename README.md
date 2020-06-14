@@ -9,6 +9,6 @@ Um aplicativo simples que tem como função converter qualquer uma das três moe
 
 ![](/images/conversor.png) ![](/images/dolar_real.png) ![](/images/euro_real.png)
 
-A proposta do aplicativo é simples. Converter qualquer valor adicionado em um dos campos, conforme a cotação atual. (às vezes, pode não estar 100% preciso, pois a API demora um pouco para atualizar para a conversão do momento).
+A proposta do aplicativo é simples. Converter qualquer valor adicionado em um dos campos, conforme a cotação atual. **(às vezes, pode não estar 100% preciso, pois a API demora um pouco para atualizar para a conversão do momento)**.
 
 Alunos: Leonardo Salomão e Carla Seter.
