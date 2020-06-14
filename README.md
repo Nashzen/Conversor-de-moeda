@@ -1,6 +1,7 @@
 # Download do aplicativo
 
 <a href="\downloadApp\" download="app-armeabi-v7a-release.apk">Download APK (Baixar o APK direto da pasta)</a>
+**Clicar no arquivo 'app-armeabi-v7a-release.apk', baixar o APK e instalar no celular para o teste**
 
 ## Conversor de moeda
 
