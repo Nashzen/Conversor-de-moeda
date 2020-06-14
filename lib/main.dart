@@ -3,17 +3,20 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
+//NOTE Link de requisição para a api
 const request =
     "https://api.hgbrasil.com/finance?format=json-cors&key=110af00c";
 
 void main() async {
   print(await getData());
 
+//Tela inicial
   runApp(MaterialApp(
       home: Home(),
       theme: ThemeData(hintColor: Colors.green, primaryColor: Colors.white)));
 }
 
+//NOTE método de requisição para obtenção dos dados, utilizando um GET
 Future<Map> getData() async {
   http.Response response = await http.get(request);
   return json.decode(response.body);
@@ -24,6 +27,7 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 
+//NOTE Controladores dos campos de valores
 class _HomeState extends State<Home> {
   final realController = TextEditingController();
   final dolarController = TextEditingController();
@@ -32,12 +36,14 @@ class _HomeState extends State<Home> {
   double dolar;
   double euro;
 
+//NOTE método para limpar os campos
   void _clearFields() {
     realController.text = "";
     dolarController.text = "";
     euroController.text = "";
   }
 
+//NOTE método para fazer os calculos para real, dependendo da moeda selecionada
   void _realChanged(String text) {
     if (text.isEmpty) {
       _clearFields();
@@ -48,6 +54,7 @@ class _HomeState extends State<Home> {
     euroController.text = (real / euro).toStringAsFixed(2);
   }
 
+//NOTE método para fazer os calculos para dolar, dependendo da moeda selecionada
   void _dolarChanged(String text) {
     if (text.isEmpty) {
       _clearFields();
@@ -58,6 +65,7 @@ class _HomeState extends State<Home> {
     euroController.text = (dolar * this.dolar / euro).toStringAsFixed(2);
   }
 
+//NOTE método para fazer os calculos para euro, dependendo da moeda selecionada
   void _euroChanged(String text) {
     if (text.isEmpty) {
       _clearFields();
@@ -68,12 +76,13 @@ class _HomeState extends State<Home> {
     dolarController.text = (euro * this.euro / dolar).toStringAsFixed(2);
   }
 
+//NOTE construção da página
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("\$ Conversor \$"),
+        title: Text("\$ Conversor de moeda \$"),
         backgroundColor: Colors.green,
         centerTitle: true,
       ),
@@ -128,6 +137,7 @@ class _HomeState extends State<Home> {
   }
 }
 
+//Widget de construção  do campo de texto personalizado
 Widget buildTextField(
     String label, String prefix, TextEditingController c, Function f) {
   return TextField(
@@ -135,7 +145,9 @@ Widget buildTextField(
     decoration: InputDecoration(
       labelText: label,
       labelStyle: TextStyle(color: Colors.green),
-      border: OutlineInputBorder(),
+      border: OutlineInputBorder(
+        borderSide: BorderSide(color: Colors.green),
+      ),
       prefixText: prefix,
     ),
     style: TextStyle(color: Colors.green, fontSize: 25.0),

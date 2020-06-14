@@ -1,16 +1,14 @@
-# converter_moeda
+# conversor_moeda
 
-A new Flutter project.
+Um aplicativo simples que tem como função converter qualquer uma das três moedas (Euro, Dólar ou Real) em tempo real, utilizando a API HG Finance 
 
-## Getting Started
+- [Site HG finance](https://hgbrasil.com/status/finance)
+- [Documentação completa](https://console.hgbrasil.com/documentation/finance)
 
-This project is a starting point for a Flutter application.
+## Utilização
 
-A few resources to get you started if this is your first Flutter project:
+![](/images/conversor.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+A proposta do aplicativo é simples. Converter qualquer valor adicionado em um dos campos, conforme a cotação atual. (às vezes, pode não estar 100% preciso, pois a API demora um pouco para atualizar para a conversão do momento).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Alunos: Leonardo Salomão e Carla Seter.
